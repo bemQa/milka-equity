@@ -2423,6 +2423,7 @@ table td {
 }
 
 .vk-text {
+	position: relative;
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 25px;
@@ -2441,6 +2442,30 @@ table td {
 	right: 0;
 	max-width: 405px;
 	width: 100%;
+}
+
+.vk-text::before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    bottom: 0;
+    margin: auto;
+    width: 41px;
+    height: 41px;
+    background: url(../img/hd-left.svg) center no-repeat;
+    background-size: contain;
+}
+
+.vk-text::after {
+    content: '';
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+    margin: auto;
+    width: 41px;
+    height: 41px;
+    background: url(../img/hd-right.svg) center no-repeat;
+    background-size: contain;
 }
 
 @media (max-width: 1366px) {
@@ -3214,13 +3239,32 @@ table td {
     }
 
     .vk-info {
-    	margin: 0 auto;
+    	margin: 20px auto 0;
     }
 
     .vk-text {
     	font-weight: 600;
     	margin-bottom: 30px;
     }
+
+    .vk-text::before {
+	    top: -30px;
+	    left: -30px;
+	    bottom: auto;
+	    width: 70px;
+	    height: 60px;
+	    background: url(../img/hd-left-mob.svg) center no-repeat;
+	    background-size: contain;
+	}
+
+	.vk-text::after {
+	    right: -40px;
+	    bottom: 60px;
+	    width: 70px;
+	    height: 60px;
+	    background: url(../img/hd-right-mob.svg) center no-repeat;
+	    background-size: contain;
+	}
 }
 
 @media (max-width: 375px) {
