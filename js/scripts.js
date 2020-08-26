@@ -84,6 +84,7 @@ $(document).ready(function () {
     if(window.innerWidth < 1000) {
         $('.products-list').scrollbar();
     }
+    $('.lk-items').scrollbar();
 
     function maskInit() {
         $(".phone-mask").inputmask({
@@ -375,59 +376,7 @@ $(document).ready(function () {
         $(this).addClass('active');
         $('.tab-item').removeClass('active');
         $('.tab-item.' + tab).addClass('active');
-        if($('.tabs').length && window.innerWidth > 1000) {
-            $('.lk-items').slick('unslick');
-            $('.lk-items').slick({
-                dots: false,
-                arrows: true,
-                infinite: false,
-                speed: 300,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                responsive: [
-                    {
-                        breakpoint: 1281,
-                        settings: {
-                            slidesToShow: 3
-                        }
-                    },
-                    {
-                        breakpoint: 1000,
-                        settings: {
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-            });
-        }
     });
-
-    if($('.tabs').length && window.innerWidth > 1000) {
-        $('.lk-items').slick({
-            dots: false,
-            arrows: true,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            responsive: [
-                {
-                    breakpoint: 1281,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 1000,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
-    } else {
-        $('.lk-items').not('.lk-items-loyalty').scrollbar();
-    }
 
     function formatDate(date) {
         var dd = date.getDate();
@@ -448,4 +397,13 @@ $(document).ready(function () {
         });
         $('.datepicker-here').val(formatDate(new Date()));
     }
+
+    $('.popup-game-coins-wrapper').click(function(e) {
+        e.preventDefault();
+        $('.popup-game-coins-wrapper').removeClass('active');
+        $(this).addClass('active');
+        if($('.game-btn.disabled') && $('.charity-btn.disabled')){
+            $('.game-btn.disabled, .charity-btn.disabled').removeClass('disabled');
+        }
+    });
 });

@@ -1221,15 +1221,20 @@ span.error {
     box-shadow: none !important;
 }
 
-.btn.disabled {
-	pointer-events: none;
-	background: #BEBEBE;
-	box-shadow: 3px 3px 0px #939393;
-}
-
 .btn.blue {
 	background: #7DC8F1;
 	box-shadow: 3px 3px 0px #1EB1FB;
+}
+
+.btn.purple {
+    background: #644F9A;
+    box-shadow: 3px 3px 0px #3B2C72;
+}
+
+.btn.disabled {
+    pointer-events: none;
+    background: #BEBEBE;
+    box-shadow: 3px 3px 0px #939393;
 }
 
 .captcha-wrap {
@@ -2468,6 +2473,841 @@ table td {
     background-size: contain;
 }
 
+.lk-page {
+    padding-bottom: 0;
+}
+
+.profile-container {
+    position: relative;
+    margin: 70px auto 30px;
+}
+
+.logout-link {
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(255, 75, 77, .6);
+}
+
+.logout-link:hover {
+    color: #FF4B4D;
+}
+
+.profile-row {
+    display: flex;
+}
+
+.profile-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    max-width: 430px;
+    min-height: 54px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.contacts-col {
+    margin-left: 30px;
+}
+
+.profile-contact {
+    position: relative;
+    padding-left: 25px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3B2C72;
+}
+
+.profile-mail {
+    margin-bottom: 10px;
+}
+
+.profile-mail::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 14px;
+    height: 11px;
+    margin: auto;
+    background: url(../img/mail.svg) center no-repeat;
+    background-size: contain;
+}
+
+.profile-phone::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    margin: auto;
+    background: url(../img/phone.svg) center no-repeat;
+    background-size: contain;
+}
+
+.coins-col {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.coins-wrapper {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.coin-count {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 64px;
+    background: url(../img/middle-heart-purple.svg) center no-repeat;
+    background-size: contain;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+.coin-text {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.code-hearts-link {
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(255, 75, 77, .6);
+}
+
+.logcode-hearts-link:hover {
+    color: #FF4B4D;
+}
+
+.tabs {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.tab {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    width: 240px;
+    height: 52px;
+    margin: 0 8px;
+    padding: 10px;
+    background: #CAB6FF;
+    border-radius: 50px;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.tab img {
+    width: 30px;
+    margin-left: 5px;
+}
+
+.tab.active {
+    background: #644F9A;
+}
+
+.tab.disabled {
+    pointer-events: none;
+    background: #ADA8A8;
+    color: #fff;
+}
+
+.tabs-content {
+    margin-bottom: 35px;
+}
+
+.tab-item {
+    display: none;
+}
+
+.tab-item.active {
+    display: block;
+}
+
+.lk-items {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    max-width: 1200px;
+    width: 100%;
+    max-height: 400px;
+    margin: 0 auto;
+}
+
+.lk-items.scroll-content {
+    width: 100% !important;
+    padding-right: 20px;
+}
+
+.check-link {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #654F96;
+    max-width: 285px;
+    width: 100%;
+    height: 190px;
+    background: rgba(202, 182, 255, .5);
+    border-radius: 30px;
+    border: 3px dashed #654F96;
+    margin: 5px;
+    padding-left: 20px;
+}
+
+.check-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 40px;
+    bottom: 0;
+    width: 20px;
+    height: 22px;
+    margin: auto;
+    background: url(../img/+.svg) center no-repeat;
+    background-size: contain;
+}
+
+.lk-item {
+    max-width: 285px;
+    width: 100%;
+    height: 190px;
+    margin: 5px;
+    padding: 25px 15px 15px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 2px 2px 11px rgba(59, 34, 130, 0.26);
+}
+
+.fake-item {
+    max-width: 285px;
+    width: 100%;
+    margin: 5px;
+}
+
+.lk-item-row {
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.lk-item-row:nth-child(1) {
+    position: relative;
+}
+
+.lk-item-row:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 1px;
+    margin: auto;
+    background: #644F9A;
+}
+
+.lk-item-row:nth-child(2) {
+    margin-top: 26px;
+}
+
+.tab-prize .lk-item-row:nth-child(1) {
+    min-height: 100px;
+}
+
+.tab-prize .lk-item-row:nth-child(2) {
+    justify-content: center;
+}
+
+.check-info-wrapper {
+    display: flex;
+}
+
+.check-info-wrapper:first-child {
+    margin-bottom: 10px;
+}
+
+.check-info-name {
+    width: 65px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3B2C72;
+    margin-right: 5px;
+}
+
+.check-info-text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.get-coin-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #3B2C72;
+}
+
+.get-coin-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 140px;
+    width: 100%;
+}
+
+.get-coin {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 52px;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 5px;
+    padding-bottom: 5px;
+}
+
+.get-coin:last-child {
+    margin-right: 0;
+}
+
+.get-coin-purple {
+    background: url(../img/middle-heart-purple.svg) center no-repeat;
+    background-size: contain;
+}
+
+.get-coin-yellow {
+    background: url(../img/middle-heart-yellow.svg) center no-repeat;
+    background-size: contain;
+}
+
+.check-preview {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.check-preview.rejected::after {
+    content: '!';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 23px;
+    height: 23px;
+    margin: auto;
+    border-radius: 50px;
+    background: #FF4B4D;
+    box-shadow: 0px 2px 2px rgba(133, 49, 44, 0.2);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.rejected-link {
+    position: relative;
+    color: #FF4B4D;
+    padding-right: 30px;
+}
+
+.prize-preview {
+    display: flex;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+    /*width: 80px;
+    height: 80px;
+    overflow: hidden;*/
+}
+
+/*.prize-preview img {
+    max-width: 70px;
+}*/
+
+.prize-date {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: lowercase;
+    color: #3B2C72;
+    margin-bottom: 4px;
+}
+
+.prize-info {
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.prize-info span {
+    width: 175px;
+    display: block;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.get-prize-text {
+    font-weight: 300;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(59, 44, 114, .7);
+}
+
+.get-prize-text.error {
+    color: #E30613;
+}
+
+.lk-item.lk-item-error::after {
+    content: '!';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50px;
+    background: #DD1010;
+    box-shadow: 0px 2px 2px rgba(133, 49, 44, 0.2);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.btn-wrapper-double {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-wrapper-double .btn-wrapper {
+    margin: 0 30px;
+}
+
+.lk-draw {
+    max-width: 750px;
+    width: 100%;
+    min-height: 390px;
+    margin: 0 auto;
+    padding: 50px 10px 40px;
+    background: #fff;
+    box-shadow: 2px 2px 11px rgba(59, 34, 130, 0.26);
+    border-radius: 30px;
+    text-align: center;
+}
+
+.lk-draw-title {
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.lk-draw-text {
+    max-width: 395px;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3B2C72;
+    margin-bottom: 25px;
+}
+
+.lk-draw-text a {
+    color: #CAB6FF;
+}
+
+.lk-draw-text span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.draw-coins-wrapper {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    max-width: 180px;
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+.draw-coin-count {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 64px;
+    background: url(../img/middle-heart-yellow.svg) center no-repeat;
+    background-size: contain;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+.draw-coin-text {
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.promocode-block {
+    display: flex;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 35px 0 45px;
+    margin-top: 50px;
+}
+
+.promocode-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    max-width: 610px;
+    width: 100%;
+    margin: auto;
+}
+
+.promocode-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -320px;
+    bottom: 0;
+    width: 306px;
+    height: 75px;
+    margin: auto;
+    background: url(../img/promocode-decor-left.svg) center no-repeat;
+    background-size: contain;
+}
+
+.promocode-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -320px;
+    bottom: 0;
+    width: 306px;
+    height: 75px;
+    margin: auto;
+    background: url(../img/promocode-decor-right.svg) center no-repeat;
+    background-size: contain;
+}
+
+.invite-info {
+    margin-right: 80px;
+}
+
+.invite-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #3B2282;
+}
+
+.invite-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #3B2282;
+}
+
+.my-promocode {
+    position: relative;
+    max-width: 274px;
+    width: 100%;
+    height: 108px;
+    background: #644F9A;
+    border-radius: 20px;
+    padding: 12px 17px 25px;
+}
+
+.promocode-i {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    width: 15px;
+    height: 15px;
+    background: url(../img/how-to.svg) center no-repeat;
+    background-size: contain;
+}
+
+.my-promocode-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.my-promocode-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promocode-input {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    width: 140px;
+    height: 40px;
+    margin-right: 10px;
+    padding: 10px 15px;
+}
+
+.promocode-value {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #3B2C72;
+}
+
+.promocode-copy-btn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    bottom: 0;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    background: url(../img/copy.svg) center no-repeat;
+    background-size: contain;
+}
+
+.share-btn {
+    margin: 0 2px;
+}
+
+.lk-popup .popup__wrap {
+    max-width: 630px;
+}
+
+.lk-popup .popup__inner {
+    max-width: 500px;
+}
+
+.milka-logo {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+}
+
+.game-btn,
+.charity-btn {
+    font-size: 18px;
+}
+
+.lk-popup .popup__title {
+    margin-bottom: 35px;
+}
+
+.lk-popup .popup__title img {
+    width: 35px;
+}
+
+.popup-game-prizes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.popup-game-coins-wrapper {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    max-width: 220px;
+    width: 100%;
+    margin: 0 auto 30px;
+    cursor: pointer;
+}
+
+.popup-game-coins-wrapper.disabled {
+    pointer-events: none;
+    cursor: auto;
+}
+
+.popup-game-coin-count {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 84px;
+    height: 75px;
+    background: url(../img/middle-heart-purple.svg) center no-repeat;
+    background-size: contain;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 20px;
+    padding-bottom: 5px;
+}
+
+.popup-game-coins-wrapper.active .popup-game-coin-count {
+    background: url(../img/heart-active.svg) center no-repeat;
+    background-size: contain;
+}
+
+.popup-game-coins-wrapper.disabled .popup-game-coin-count {
+    background: url(../img/heart-disabled.svg) center no-repeat;
+    background-size: contain;
+}
+
+.popup-game-coin-text {
+    text-align: left;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+.popup-game-coins-wrapper.disabled .popup-game-coin-text {
+    color: #AFABB4;
+}
+
+.popup-game-coin-text span {
+    font-weight: 300;
+    text-transform: none;
+}
+
+.popup-game-coin-text b {
+    font-weight: bold;
+}
+
+.lk-popup .btn-wrapper-double .btn-wrapper {
+    margin: 0 auto;
+}
+
+.popup-win-prize {
+    max-width: 355px;
+    width: 100%;
+    margin: 20px auto 50px;
+}
+
+.special-heart {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 98px;
+    background: url(../img/big-heart-purple.svg) center no-repeat;
+    background-size: contain;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 20px auto 50px;
+    padding-bottom: 10px;
+}
+
+.special-charity-heart {
+    background: url(../img/big-heart-blue.svg) center no-repeat;
+    background-size: contain;
+}
+
+.special-draw-heart {
+    background: url(../img/middle-heart-yellow.svg) center no-repeat;
+    background-size: contain;
+}
+
+.popup-win-draw-prize {
+    max-width: 282px;
+    width: 100%;
+    margin: 20px auto 10px;
+}
+
+.popup-win-draw-prize-name {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.popup-win-draw-prize-desc {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 1366px) {
 	.steps-block::before,
 	.hashtag-block::before,
@@ -2536,6 +3376,10 @@ table td {
     	top: 160px;
 	    right: 15px;
 	    max-width: 260px;
+    }
+
+    .lk-items {
+        max-width: 910px;
     }
 }
 
@@ -3265,6 +4109,161 @@ table td {
 	    background: url(../img/hd-right-mob.svg) center no-repeat;
 	    background-size: contain;
 	}
+
+    .lk-page {
+        padding-bottom: 0;
+    }
+
+    .lk-page .title {
+        font-size: 38px;
+    }
+
+    .profile-container {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .profile-row {
+        flex-direction: column;
+    }
+
+    .profile-name {
+        font-size: 16px;
+        line-height: 21px;
+        min-height: auto;
+    }
+
+    .logout-link {
+        position: absolute;
+        top: 140px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .profile-col {
+        margin-bottom: 30px;
+    }
+
+    .contacts-col {
+        -ms-align-items: center;
+        align-items: center;
+        margin: 0 0 60px;
+    }
+
+    .coins-col {
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+
+    .coins-wrapper {
+        max-width: 200px;
+        width: 100%;
+        margin: 0 auto 10px;
+    }
+
+    .coin-text {
+        text-align: left;
+    }
+
+    .tab {
+        width: 102px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .tab img {
+        width: 16px;
+    }
+
+    .check-link {
+        height: 92px;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 5px auto;
+    }
+
+    .lk-item {
+        margin: 5px auto;
+    }
+
+    .btn-wrapper-double,
+    .promocode-wrapper {
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+    }
+
+    .btn-wrapper-double .btn-wrapper,
+    .lk-popup .btn-wrapper-double .btn-wrapper {
+        margin: 10px auto;
+    }
+
+    .invite-info {
+        margin: 0 0 25px;
+    }
+
+    .milka-logo {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-bottom: 10px;
+    }
+
+    .lk-popup .popup__title {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    .lk-popup .popup__title img {
+        width: 27px;
+    }
+
+    .popup-game-prizes {
+        max-width: 260px;
+        width: 100%;
+        margin: 0 auto 10px;
+    }
+
+    .popup-game-coins-wrapper {
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+        max-width: 110px;
+        margin-bottom: 20px;
+    }
+
+    .popup-game-coin-count {
+        width: 62px;
+        height: 55px;
+        margin-right: 0;
+        margin-bottom: 5px;
+        font-size: 29px;
+    }
+
+    .popup-game-coin-text {
+        text-align: center;
+    }
+
+    .popup-win-prize,
+    .popup-win-draw-prize {
+        max-width: 290px;
+    }
+
+    .lk-draw {
+        padding: 30px 10px 40px;
+    }
+
+    .lk-draw-title {
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+    .lk-draw-text {
+        max-width: 240px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -3283,4 +4282,9 @@ table td {
 	    font-size: 20px;
     	line-height: 26px;
 	}
+
+    .tab {
+        width: 92px;
+        margin: 0 auto;
+    }
 }
