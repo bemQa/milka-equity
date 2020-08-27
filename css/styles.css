@@ -4077,8 +4077,6 @@ table td {
     }
 
     .hashtag-page-list {
-    	position: absolute;
-    	top: 620px;
 	    max-width: 310px;
 	    font-weight: 600;
 	    font-size: 20px;
@@ -4100,10 +4098,6 @@ table td {
 
     .hashtag-page-slider-wrapper {
         padding: 0;
-    }
-
-    .hashtag-page-slider {
-        margin-bottom: 300px;
     }
 
     .vk-block::before {
