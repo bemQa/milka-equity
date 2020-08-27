@@ -632,7 +632,7 @@ header {
     width: 100%;
     height: 88px;
     margin: auto;
-    z-index: 3;
+    z-index: 11;
 }
 
 header + section {
@@ -1283,7 +1283,7 @@ span.error {
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: -235px;
+	bottom: -210px;
 	width: 100%;
 	height: 285px;
 	margin: auto;
@@ -1379,7 +1379,7 @@ span.error {
 .hashtag-block {
 	position: relative;
 	min-height: 470px;
-	padding: 40px 0 0;
+	padding: 100px 0 0;
 }
 
 .hashtag-block::before {
@@ -2377,28 +2377,37 @@ table td {
 	color: #B69BFF;
 }
 
+.hashtag-page-slider-wrapper {
+    position: relative;
+    padding: 0 30px;
+}
+
 .hashtag-page-slider {
 	margin-bottom: 40px;
 }
 
 .hashtag-page-slide-img {
-	max-width: 286px;
+	max-width: 270px;
 	width: 100%;
+    max-height: 295px;
+    overflow: hidden;
 	margin: auto;
 }
 
-.hashtag-page-slider .swiper-button-prev {
+.hashtag-page-slider-wrapper .swiper-button-prev {
+    left: 0;
 	background: url(../img/arrow-left-purple.svg) center no-repeat;
 	background-size: contain;
 }
 
-.hashtag-page-slider .swiper-button-next {
+.hashtag-page-slider-wrapper .swiper-button-next {
+    right: 0;
 	background: url(../img/arrow-right-purple.svg) center no-repeat;
 	background-size: contain;
 }
 
-.hashtag-page-slider .swiper-button-next::after, 
-.hashtag-page-slider .swiper-button-prev::after {
+.hashtag-page-slider-wrapper .swiper-button-next::after, 
+.hashtag-page-slider-wrapper .swiper-button-prev::after {
 	display: none;
 }
 
@@ -3308,6 +3317,23 @@ table td {
     margin-bottom: 10px;
 }
 
+.iframe-wrap,
+.iframe-wrap iframe {
+    scrollbar-width: none;
+}
+
+.iframe-wrap {
+    height: 100%;
+    min-height: 340px;
+    width: 100%;
+}
+
+.iframe-wrap iframe {
+    height: 100vh;
+    max-height: 340px;
+    width: 100%;
+}
+
 @media (max-width: 1366px) {
 	.steps-block::before,
 	.hashtag-block::before,
@@ -3652,7 +3678,7 @@ table td {
     }
 
 	.hashtag-block {
-		padding-bottom: 40px;
+		padding: 40px 0;
 	}
 
     .hashtag-block::before {
@@ -4070,6 +4096,10 @@ table td {
 
     .hashtag-page-list span::before {
     	top: 0;
+    }
+
+    .hashtag-page-slider-wrapper {
+        padding: 0;
     }
 
     .hashtag-page-slider {
