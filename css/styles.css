@@ -2909,6 +2909,13 @@ table td {
     line-height: 19px;
 }
 
+.prize-info p {
+    margin-top: 2px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1;
+}
+
 .get-prize-text {
     font-weight: 300;
     text-align: center;
