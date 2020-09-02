@@ -635,7 +635,8 @@ header {
     z-index: 11;
 }
 
-header + section {
+header ~ .main-block,
+header ~ .inner-page {
 	margin-top: 88px;
 }
 
@@ -3342,6 +3343,15 @@ table td {
     width: 100%;
 }
 
+.main-charity-link {
+    position: absolute;
+    width: 258px;
+    height: 230px;
+    bottom: -198px;
+    right: 232px;
+    z-index: 2;
+}
+
 @media (max-width: 1366px) {
 	.steps-block::before,
 	.hashtag-block::before,
@@ -3414,6 +3424,10 @@ table td {
 
     .lk-items {
         max-width: 910px;
+    }
+
+    .main-charity-link {
+    	right: 132px;
     }
 }
 
@@ -4295,6 +4309,15 @@ table td {
 
     .lk-draw-text {
         max-width: 240px;
+    }
+
+    .main-charity-link {
+    	right: -120px;
+	    left: 0;
+	    bottom: -166px;
+	    width: 130px;
+    	height: 130px;
+	    margin: auto;
     }
 }
 
