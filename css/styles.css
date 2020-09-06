@@ -3352,6 +3352,129 @@ table td {
     z-index: 2;
 }
 
+/*tm magnit and over*/
+
+.tm header {
+    position: absolute;
+    height: 44px;
+}
+
+.tm header ~ .main-block, 
+.tm header ~ .inner-page {
+    margin-top: 0;
+}
+
+.tm .menu {
+    max-width: 1040px;
+}
+
+.tm .menu::before {
+    display: none;
+}
+
+.tm .menu-links {
+    max-width: 520px;
+    justify-content: space-around;
+    margin-right: 0;
+}
+
+.tm .menu-link.active, 
+.tm .menu-link:hover {
+    background: none;
+    text-decoration: underline;
+}
+
+.tm-magnit .main-block::after {
+    background: url(../img/tm-magnit/main-hearts.png) center no-repeat;
+    background-size: 1270px 290px;
+}
+
+.tm-magnit .steps-block {
+    padding: 180px 0 300px;
+}
+
+.tm-magnit .steps-block::before {
+    min-height: 744px;
+    background: url(../img/tm-magnit/bg2.png) center no-repeat;
+    background-size: 100% 100%;
+}
+
+.tm-magnit .steps {
+    position: relative;
+    max-width: 980px;
+    z-index: 1;
+}
+
+.tm-magnit .step {
+    position: relative;
+    max-width: 406px;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.tm-magnit .step1 .step-img {
+    max-width: 406px;
+}
+
+.tm-magnit .step2 .step-img {
+    max-width: 309px;
+}
+
+.tm-magnit .step-num {
+    position: absolute;
+    top: 200px;
+    left: 0;
+}
+
+.tm-magnit .step-title,
+.tm-magnit .step-text {
+    text-align: left;
+    padding-left: 94px;
+}
+
+.magnit-banner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -380px;
+    margin: auto;
+    z-index: 1;
+}
+
+.tm-magnit .prizes-block::before {
+    display: none;
+}
+
+.tm-magnit .prize-row1 {
+    margin-bottom: 0;
+}
+
+.tm-magnit .prizes-wrapper {
+    margin-top: 40px;
+}
+
+.tm-magnit .prize1 {
+    max-width: 246px;
+    width: 100%;
+}
+
+.tm-magnit .prize-img {
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.tm-magnit .prize1 .prize-img {
+    max-width: 117px;
+}
+
+.tm-magnit .prize1 .prize-img img {
+    height: auto;
+}
+
+.tm-magnit .prize2 .prize-img {
+    max-width: 246px;
+}
+
 @media (max-width: 1366px) {
 	.steps-block::before,
 	.hashtag-block::before,
@@ -4318,6 +4441,60 @@ table td {
 	    width: 130px;
     	height: 130px;
 	    margin: auto;
+    }
+
+    .tm header {
+        position: fixed;
+    }
+
+    .tm .menu-links {
+        max-width: 100%;
+    }
+
+    .tm-magnit .main-block::after {
+        bottom: -90px;
+        height: 175px;
+        background: url(../img/tm-magnit/main-hearts-mob.png) center no-repeat;
+        background-size: 416px 175px;
+    }
+
+    .tm-magnit .steps-block {
+        padding: 100px 0 550px;
+    }
+
+    .tm-magnit .steps-block::before {
+        min-height: 982px;
+        background: url(../img/bg2-mob.png) center no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .tm-magnit .step {
+        -ms-align-items: center;
+        align-items: center;
+    }
+
+    .tm-magnit .step1 .step-img {
+        max-width: 353px;
+    }
+
+    .tm-magnit .step2 .step-img {
+        max-width: 179px;
+    }
+
+    .tm-magnit .step-num {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+
+    .tm-magnit .step-title, 
+    .tm-magnit .step-text {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .magnit-banner {
+        bottom: -550px;
     }
 }
 
