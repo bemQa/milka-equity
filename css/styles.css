@@ -3383,7 +3383,7 @@ table td {
 }
 
 @media (min-width: 1001px) {
-    .tm .menu-link {
+    .tm .inner-header .menu-link {
         color: #644F9A;
     }
 }
