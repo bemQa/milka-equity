@@ -1630,7 +1630,7 @@ span.error {
 }
 
 .inner-page {
-    min-height: 672px;
+    min-height: calc(100vh - 177px);
 	padding: 60px 0;
 	background: url(../img/bg-inner.jpg) center repeat-x;
 	background-size: cover;
