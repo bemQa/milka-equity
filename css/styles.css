@@ -915,7 +915,7 @@ footer {
     bottom: 0;
     right: 0;
     width: 100%;
-    background-color: rgba(139, 139, 139, 0.9);
+    background-color: rgba(31, 18, 78, 0.8);
     z-index: -1;
     opacity: 0;
     -webkit-transition: all .2s linear;
@@ -3994,6 +3994,11 @@ table td {
 	.main-hashtag-slide-img {
 		max-width: 220px;
 	}
+
+    .main-hashtag-slide-img iframe {
+        width: 220px;
+        height: 240px;
+    }
 
 	.prizes-block {
 		padding: 60px 0 80px;
