@@ -406,4 +406,19 @@ $(document).ready(function () {
             $('.game-btn.disabled, .charity-btn.disabled').removeClass('disabled');
         }
     });
+
+    if ($('.tm-slider').length) {
+        var wrap = $('.tm-slider');
+
+        var swiper = new Swiper(wrap, {
+            effect: 'fade',
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+        });
+        swiper.init();
+
+    }
 });
