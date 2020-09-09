@@ -4744,12 +4744,12 @@ table td {
     }
 
     .tm-slide-logo {
-        min-height: none;
+        min-height: auto;
         text-align: center;
     }
 
     .tm-slide-desc {
-        min-height: none;
+        min-height: auto;
         font-size: 18px;
         line-height: 22px;
         text-align: center;
