@@ -421,4 +421,9 @@ $(document).ready(function () {
         swiper.init();
 
     }
+
+    // choise shop
+    $('#shops').on('select2:select', function(){
+        $('.shops-btn').removeClass('disabled');
+    });
 });

@@ -1324,7 +1324,7 @@ span.error {
 	right: 0;
 	width: 100%;
 	min-height: 900px;
-	background: url(../img/bg2.png) center no-repeat;
+	background: url(../img/bg2.webp) center no-repeat;
 	background-size: 100% 100%;
 	z-index: 0;
 }
@@ -1395,7 +1395,7 @@ span.error {
 	right: 0;
 	width: 100%;
 	min-height: 805px;
-	background: url(../img/bg3.png) center no-repeat;
+	background: url(../img/bg3.webp) center no-repeat;
 	background-size: 100% 100%;
 	z-index: 0;
 }
@@ -1519,7 +1519,7 @@ span.error {
 	right: 0;
 	width: 100%;
 	min-height: 918px;
-	background: url(../img/bg4.png) center no-repeat;
+	background: url(../img/bg4.webp) center no-repeat;
 	background-size: 100% 100%;
 	z-index: 0;
 }
@@ -3405,7 +3405,7 @@ table td {
 
 .tm-magnit .steps-block::before {
     min-height: 744px;
-    background: url(../img/tm-magnit/bg2.png) center no-repeat;
+    background: url(../img/tm-magnit/bg2.webp) center no-repeat;
     background-size: 100% 100%;
 }
 
@@ -4021,7 +4021,7 @@ table td {
 
     .steps-block::before {
     	min-height: 1800px;
-    	background: url(../img/bg2-mob.png) center no-repeat;
+    	background: url(../img/bg2-mob.webp) center no-repeat;
     	background-size: 100% 100%;
     }
 
@@ -4042,7 +4042,7 @@ table td {
 	}
 
     .hashtag-block::before {
-    	background: url(../img/bg3-mob.png) center no-repeat;
+    	background: url(../img/bg3-mob.webp) center no-repeat;
     	background-size: 100% 100%;
     }
 
@@ -4092,7 +4092,7 @@ table td {
 
 	.prizes-block::before {
 	    min-height: 1183px;
-		background: url(../img/bg4-mob.png) center no-repeat;
+		background: url(../img/bg4-mob.webp) center no-repeat;
     	background-size: 100% 100%;
 	}
 
@@ -4693,7 +4693,7 @@ table td {
 
     .tm-magnit .steps-block::before {
         min-height: 982px;
-        background: url(../img/bg2-mob.png) center no-repeat;
+        background: url(../img/bg2-mob.webp) center no-repeat;
         background-size: 100% 100%;
     }
 

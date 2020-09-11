@@ -140,7 +140,7 @@
 					<div class="tabs-content">
 						<div class="tab-item tab-checks active">
 							<div class="lk-items">
-								<a href="#!" class="check-link pop-op" data-popup="check-upload">Загрузить <br>новый чек</a>
+								<a href="#!" class="check-link pop-op" data-popup="shops">Загрузить <br>новый чек</a>
 								<div class="lk-item">
 									<div class="lk-item-row">
 										<div class="check-info-col">
@@ -635,6 +635,45 @@
                     	</div>
                     	<div class="btn-wrapper">
 							<button class="btn">Отправить</button>
+						</div>
+                    </form>
+                </div>
+            </div>
+		</div>
+		<div id="shops" class="popup">
+			<div class="popup__wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.0078 2L2.00781 18" stroke="#644F9A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    					<path d="M2.00781 2L18.0078 18" stroke="#644F9A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+                <div class="popup__inner">
+                    <div class="popup__title">Выбор сети</div>
+                    <div class="popup__desc">
+                    	Выбирите чек из какой сети <br>вы хотите загрузить
+                    </div>
+                    <form class="popup-form">
+                    	<div class="input-field shops-field">
+                    		<div class="select feedback-select">
+								<select name="shops" id="shops" data-placeholder="Выберите сеть" required>
+									<option value=""></option>
+									<option value="1">Магнит</option>
+									<option value="2">Пятерочка</option>
+									<option value="3">Перекресток</option>
+									<option value="4">Карусель</option>
+									<option value="5">Лента</option>
+									<option value="6">Красное&Белое</option>
+									<option value="7">Дикси</option>
+									<option value="8">Ашан</option>
+									<option value="9">ОКЕЙ</option>
+									<option value="10">Утконос, Беру, Самокат, Озон</option>
+									<option value="11">Другое</option>
+								</select>
+							</div>
+                    	</div>
+                    	<div class="btn-wrapper">
+							<a href="#!" class="btn shops-btn pop-op disabled" data-popup="check-upload">Далее</a>
 						</div>
                     </form>
                 </div>
