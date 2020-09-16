@@ -12,7 +12,30 @@
 	<link rel="stylesheet" href="libs/scrollbar/jquery.scrollbar.css">
 	<link rel="stylesheet" href="libs/datepicker/datepicker.min.css">
 	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
-	<link rel="stylesheet" href="css/styles.css">
+	<link id="upload" rel="stylesheet" href="css/styles_webp.css">
+	<script src="libs/detect.js"></script>
+	<script>
+        var ua = detect.parse(navigator.userAgent);
+        //var browser = navigator.appName;
+        if (ua.browser.family == "Mobile Safari" || ua.browser.family == "Safari" || ua.browser.family == "IE" || ua.os.family == "iOS") {
+            var fileref = document.createElement("link");
+            fileref.setAttribute("rel", "stylesheet");
+            fileref.setAttribute("type", "text/css");
+            fileref.setAttribute("href", "css/styles.css");
+        }
+        else {
+            var fileref = document.createElement("link");
+            fileref.setAttribute("rel", "stylesheet");
+            fileref.setAttribute("type", "text/css");
+            fileref.setAttribute("href", "css/styles_webp.css");
+        }
+        document.getElementsByTagName("head")[0].appendChild(fileref);
+
+        window.onload = function(){
+        	document.getElementById('upload').remove();
+        };
+    </script>
+	
 	<!--[if lte IE 9]>
     <script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -187,7 +210,7 @@
 			</section>
 			<section class="hashtag-block">
 				<!-- если нет слайдов -->
-				<!-- <div class="no-slide desktop-visible"></div> -->
+				<div class="no-slide desktop-visible"></div>
 				<div class="container">
 					<div class="hashtag-slogan">
 						<img src="img/hashtag-slogan.svg" alt="">
@@ -199,7 +222,7 @@
 								<a href="hashtag.html" class="btn">Участвовать</a>
 							</div>
 						</div>
-						<div class="swiper-container main-hashtag-slider">
+						<!-- <div class="swiper-container main-hashtag-slider">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 			                        <div class="main-hashtag-slide">
@@ -225,7 +248,7 @@
 							</div>
 							<div class="swiper-button-prev"></div>
 							<div class="swiper-button-next"></div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</section>
