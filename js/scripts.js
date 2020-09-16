@@ -427,3 +427,9 @@ $(document).ready(function () {
         $('.shops-btn').removeClass('disabled');
     });
 });
+
+$(window).on('load', function() {
+    setTimeout(function(){
+        $('.preloader').fadeOut();
+    },500);
+});

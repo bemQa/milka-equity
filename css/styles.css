@@ -3690,6 +3690,170 @@ table td {
     z-index: 2;
 }
 
+/*.preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 999;
+}
+
+.preload-logo {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.woa {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 146px;
+    height: 130px;
+    background: url(../img/preloader/preloader-heart.svg) center no-repeat, #fff;
+    background-size: contain;
+}
+
+.woa::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: #fff;
+}
+
+.hidwoa {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height .35s;
+    transition: height .35s;
+    animation: woa 2s infinite;
+}
+
+.hidwoa img {
+    position: relative;
+    top: -98px;
+    animation: woa-img 2s infinite;
+}
+
+.woa:hover .hidwoa {
+    height: 100%;
+}
+
+@keyframes woa {
+    0%, 100% {
+        height: 0;
+    }
+
+    50% {
+       height: 115%; 
+    }
+}
+
+@keyframes woa-img {
+    0%, 100% {
+        top: -98px;
+    }
+
+    50% {
+       top: 0; 
+    }
+}*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 999;
+}
+
+.woa {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 155px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.woa::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: #E9E9E9;
+    z-index: 0;
+}
+
+.preload-logo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.hidwoa {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    width: 155px;
+    margin: auto;
+    overflow: hidden;
+    -webkit-transition: height .35s;
+    transition: height .35s;
+    animation: woa 3s infinite;
+    z-index: 1;
+}
+
+.woa:hover .hidwoa {
+    height: 110%;
+}
+
+@keyframes woa {
+    0%, 100% {
+        height: 0;
+    }
+
+    50% {
+       height: 110%; 
+    }
+}
+
 @media (max-width: 1366px) {
 	.steps-block::before,
 	.hashtag-block::before,
