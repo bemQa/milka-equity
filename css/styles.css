@@ -2160,7 +2160,8 @@ table td {
 .bubble-group .products-item,
 .big-group .products-item,
 .box-group .products-item,
-.bar-group .products-item {
+.bar-group .products-item,
+.waffles-group .products-item {
 	max-width: 210px;
 }
 
@@ -2169,7 +2170,8 @@ table td {
 }
 
 .box-group .products-item,
-.bar-group .products-item {
+.bar-group .products-item,
+.waffles-group .products-item {
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -2187,7 +2189,8 @@ table td {
 
 .big-group .products-item-img,
 .box-group .products-item-img,
-.bar-group .products-item-img {
+.bar-group .products-item-img,
+.waffles-group .products-item-img {
 	max-width: 208px;
 }
 
