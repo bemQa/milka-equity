@@ -2165,33 +2165,45 @@ table td {
 	max-width: 210px;
 }
 
+.waffles-group .products-item:nth-child(2) {
+    max-width: 260px;
+}
+
 .cake-group .products-item {
-	max-width: 184px;
+    max-width: 184px;
 }
 
 .box-group .products-item,
 .bar-group .products-item,
 .waffles-group .products-item {
-	margin-left: auto;
-	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .products-item-img {
-	display: flex;
-	-ms-align-items: center;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
     max-width: 76px;
-	width: 100%;
-	min-height: 171px;
-	margin: 0 auto 5px;
+    width: 100%;
+    min-height: 171px;
+    margin: 0 auto 5px;
 }
 
 .big-group .products-item-img,
 .box-group .products-item-img,
 .bar-group .products-item-img,
 .waffles-group .products-item-img {
-	max-width: 208px;
+    max-width: 208px;
+}
+
+.waffles-group .products-item-img {
+    min-height: 204px;
+}
+
+.waffles-group .products-item:nth-child(2) .products-item-img {
+    max-width: 252px;
 }
 
 .cake-group .products-item-img {
