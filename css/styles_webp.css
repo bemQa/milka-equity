@@ -894,6 +894,13 @@ footer {
     color: #fff;
 }
 
+.footer-link {
+    font-size: 12px;
+    line-height: 17px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
 .copyright {
     font-size: 12px;
     line-height: 15px;
