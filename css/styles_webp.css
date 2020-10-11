@@ -5099,6 +5099,39 @@ table td {
     .tm-perekrestok table td {
         text-align: left;
     }
+
+    .winner-monthly {
+        flex-direction: column;
+        width: 260px;
+        min-height: 170px;
+        height: auto;
+        margin: 230px auto 60px;
+        padding: 90px 25px 15px;
+    }
+
+    .winner-monthly-img {
+        top: -184px;
+        left: 0;
+        right: 0;
+        bottom: auto;
+    }
+
+    .winner-monthly-name, 
+    .winner-monthly-city {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .winner-monthly-decor1 {
+        top: -190px;
+        left: auto;
+        right: 0;
+    }
+
+    .winner-monthly-decor4 {
+        top: 25px;
+        left: -6px;
+    }
 }
 
 @media (max-width: 375px) {
