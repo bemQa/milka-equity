@@ -2205,6 +2205,16 @@ table td {
     max-width: 208px;
 }
 
+.seasonals-chocolate-group .products-item-img {
+    max-width: 175px;
+    min-height: 300px;
+}
+
+.seasonals-biscuits-group .products-item-img {
+    max-width: 130px;
+    min-height: 240px;
+}
+
 .waffles-group .products-item-img {
     min-height: 204px;
 }
@@ -4681,6 +4691,10 @@ table td {
 		width: 100%;
 		margin: 15px auto;
 	}
+
+    .seasonals-chocolate-group .products-item-img {
+        min-height: 100px;
+    }
 
 	.faq-container {
         margin: 0 auto;
