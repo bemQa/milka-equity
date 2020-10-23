@@ -2140,6 +2140,20 @@ table td {
 	box-shadow: none;
 }
 
+.seasonals-chocolate-group:not(.active) .products-title::before,
+.seasonals-biscuits-group:not(.active) .products-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 65px;
+    bottom: 0;
+    margin: auto;
+    width: 235px;
+    height: 41px;
+    background: url(../img/snow-line.png) center no-repeat;
+    background-size: contain;
+}
+
 .products-title.active::after {
 	content: '-';
 	color: #644F9A;
@@ -5193,7 +5207,7 @@ table td {
         text-align: center;
     }
 
-    .cookies-block p {
+    .cookies-page p {
         font-size: 14px;
         margin: 20px 0;
     }
