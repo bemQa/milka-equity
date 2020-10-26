@@ -1796,6 +1796,17 @@ table td {
     min-width: 190px;
 }
 
+table td:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 230px;
+}
+
+table td:nth-child(3) {
+   min-width: 140px;
+}
+
 .prize-td {
 	display: flex;
 	-ms-align-items: center;
@@ -4560,6 +4571,9 @@ table td {
 		font-weight: bold;
 		font-size: 16px;
 		line-height: 19px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 170px;
 	}
 
 	.charity-page {
