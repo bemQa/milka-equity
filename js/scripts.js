@@ -85,6 +85,7 @@ $(document).ready(function () {
         $('.products-list').scrollbar();
     }
     $('.lk-items').scrollbar();
+    $('.popups .winners-col-container').scrollbar();
 
     function maskInit() {
         $(".phone-mask").inputmask({

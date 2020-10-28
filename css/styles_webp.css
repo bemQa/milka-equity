@@ -4114,6 +4114,27 @@ table td:nth-child(3) {
     padding: 10px 10px 10px 0;
 }
 
+.tm-magnit + .popups .winners-col-container {
+    max-height: 320px;
+    margin-bottom: 40px;
+}
+
+.tm-magnit + .popups .winners-col-title {
+    font-family: 'Museo Sans Cyrl';
+    font-size: 18px;
+    line-height: 22px;
+    color: #FF4B4D;
+}
+
+.tm-magnit + .popups .winners-col {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tm-magnit + .popups .winners-col .winners-table {
+    max-height: 100%;
+}
+
 @media (max-width: 1366px) {
 	.steps-block::before,
 	.hashtag-block::before,
