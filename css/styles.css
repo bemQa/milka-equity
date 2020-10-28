@@ -3461,6 +3461,11 @@ table td:nth-child(3) {
     background-size: 1270px 290px;
 }
 
+.tm-lenta .main-block::after {
+    background: url(../img/tm-lenta/main-hearts.png) center no-repeat;
+    background-size: 1270px 290px;
+}
+
 .tm-magnit .steps-block {
     padding: 180px 0 300px;
 }
@@ -3469,22 +3474,29 @@ table td:nth-child(3) {
     padding: 180px 0;
 }
 
+.tm-lenta .steps-block {
+    padding: 180px 0;
+}
+
 .tm-magnit .steps-block::before,
-.tm-perekrestok .steps-block::before {
+.tm-perekrestok .steps-block::before,
+.tm-lenta .steps-block::before {
     min-height: 744px;
     background: url(../img/tm-magnit/bg2.png) center no-repeat;
     background-size: 100% 100%;
 }
 
 .tm-magnit .steps,
-.tm-perekrestok .steps {
+.tm-perekrestok .steps,
+.tm-lenta .steps {
     position: relative;
     max-width: 980px;
     z-index: 1;
 }
 
 .tm-magnit .step,
-.tm-perekrestok .step {
+.tm-perekrestok .step,
+.tm-lenta .step {
     position: relative;
     max-width: 406px;
     -ms-align-items: flex-start;
@@ -3492,17 +3504,20 @@ table td:nth-child(3) {
 }
 
 .tm-magnit .step1 .step-img,
-.tm-perekrestok .step1 .step-img {
+.tm-perekrestok .step1 .step-img,
+.tm-lenta .step1 .step-img {
     max-width: 406px;
 }
 
 .tm-magnit .step2 .step-img,
-.tm-perekrestok .step2 .step-img {
+.tm-perekrestok .step2 .step-img,
+.tm-lenta .step2 .step-img {
     max-width: 309px;
 }
 
 .tm-magnit .step-num,
-.tm-perekrestok .step-num {
+.tm-perekrestok .step-num,
+.tm-lenta .step-num {
     position: absolute;
     top: 200px;
     left: 0;
@@ -3511,7 +3526,9 @@ table td:nth-child(3) {
 .tm-magnit .step-title,
 .tm-magnit .step-text,
 .tm-perekrestok .step-title,
-.tm-perekrestok .step-text {
+.tm-perekrestok .step-text,
+.tm-lenta .step-title,
+.tm-lenta .step-text {
     text-align: left;
     padding-left: 94px;
 }
@@ -4035,6 +4052,68 @@ table td:nth-child(3) {
     margin-bottom: 20px;
 }
 
+.tm-lenta .winners-page {
+    position: relative;
+    background: url(../img/tm-winners-bg.jpg) center repeat-x;
+    background-size: cover;
+}
+
+.tm .winners-page .title {
+    padding-top: 80px;
+}
+
+.tm-winners-card {
+    position: absolute;
+    max-width: 220px;
+    width: 100%;
+    bottom: 20px;
+    right: -1000px;
+    left: 0;
+    margin: auto;
+}
+
+.winners-col-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 720px;
+    width: 100%;
+    margin: 40px auto 0;
+}
+
+.winners-col {
+    max-width: 280px;
+    width: 100%;
+}
+
+.winners-col-title {
+    font-family: 'AppetitePro';
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tm-lenta .winners-col-title {
+    color: #F7CD4E;
+}
+
+.winners-col .winners-table {
+    max-height: 180px;
+}
+
+.winners-col table th {
+    font-size: 12px;
+    padding: 0 5px 10px 0;
+}
+
+.winners-col table td {
+    font-size: 16px;
+    min-width: auto;
+    padding: 10px 10px 10px 0;
+}
+
 @media (max-width: 1366px) {
 	.steps-block::before,
 	.hashtag-block::before,
@@ -4492,6 +4571,7 @@ table td:nth-child(3) {
 	}
 
 	.inner-page .inner-heart {
+        display: block;
 		position: relative;
 		top: auto;
 		left: auto;
@@ -5047,6 +5127,13 @@ table td:nth-child(3) {
         background-size: 416px 175px;
     }
 
+    .tm-lenta .main-block::after {
+        bottom: -115px;
+        height: 175px;
+        background: url(../img/tm-lenta/main-hearts-mob.png) center no-repeat;
+        background-size: 381px 188px;
+    }
+
     .tm-magnit .steps-block {
         padding: 100px 0 550px;
     }
@@ -5055,31 +5142,40 @@ table td:nth-child(3) {
         padding: 100px 0;
     }
 
+    .tm-lenta .steps-block {
+        padding: 100px 0;
+    }
+
     .tm-magnit .steps-block::before,
-    .tm-perekrestok .steps-block::before {
+    .tm-perekrestok .steps-block::before,
+    .tm-lenta .steps-block::before {
         min-height: 982px;
         background: url(../img/bg2-mob.png) center no-repeat;
         background-size: 100% 100%;
     }
 
     .tm-magnit .step,
-    .tm-perekrestok .step {
+    .tm-perekrestok .step,
+    .tm-lenta .step {
         -ms-align-items: center;
         align-items: center;
     }
 
     .tm-magnit .step1 .step-img,
-    .tm-perekrestok .step1 .step-img {
+    .tm-perekrestok .step1 .step-img,
+    .tm-lenta .step1 .step-img {
         max-width: 353px;
     }
 
     .tm-magnit .step2 .step-img,
-    .tm-perekrestok .step2 .step-img {
+    .tm-perekrestok .step2 .step-img,
+    .tm-lenta .step2 .step-img {
         max-width: 179px;
     }
 
     .tm-magnit .step-num,
-    .tm-perekrestok .step-num {
+    .tm-perekrestok .step-num,
+    .tm-lenta .step-num {
         position: relative;
         top: auto;
         left: auto;
@@ -5088,7 +5184,9 @@ table td:nth-child(3) {
     .tm-magnit .step-title, 
     .tm-magnit .step-text,
     .tm-perekrestok .step-title, 
-    .tm-perekrestok .step-text {
+    .tm-perekrestok .step-text,
+    .tm-lenta .step-title, 
+    .tm-lenta .step-text {
         text-align: center;
         padding-left: 0;
     }
@@ -5235,6 +5333,29 @@ table td:nth-child(3) {
     .main-cookie-h2 {
         font-size: 21px;
         line-height: 28px;
+    }
+
+    .tm .winners-page .title {
+        padding-top: 0;
+    }
+
+    .winners-col table th, 
+    .winners-col table td {
+        text-align: left;
+    }
+
+    .winners-col {
+        margin: 0 auto 50px;
+    }
+
+    .winners-col .winners-table {
+        max-height: 210px;
+        margin-bottom: 0;
+    }
+
+    .tm-winners-card {
+        position: relative;
+        bottom: auto;
     }
 }
 
