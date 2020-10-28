@@ -4135,14 +4135,61 @@ table td:nth-child(3) {
     max-height: 100%;
 }
 
+.tm-magnit-ny .main-block {
+    min-height: 700px;
+}
+
+.tm-magnit-ny .main-block::before {
+    height: 748px;
+    background: url(../img/bg1-ny.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.tm-magnit-ny .main-block::after {
+    background: url(../img/main-tinsel.png) center no-repeat;
+    background-size: 100% 100%;
+}
+
+.santa {
+    position: absolute;
+    top: 430px;
+    left: -200px;
+    right: 0;
+    margin: auto;
+    width: 240px;
+    z-index: 2;
+}
+
+.tm-magnit-ny .main-slogan-wrapper {
+    padding-top: 140px;
+}
+
+.tm-magnit-ny .steps-block::after {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: -600px;
+    margin: auto;
+    width: 309px;
+    height: 278px;
+    background: url(../img/tm-magnit/heart.png) center no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
 @media (max-width: 1366px) {
 	.steps-block::before,
-	.hashtag-block::before,
-	.prizes-block::before,
-	.charity-page,
-    .fund-rus-block {
-		background-size: cover;
-	}
+    .hashtag-block::before,
+    .prizes-block::before,
+    .charity-page,
+    .fund-rus-block,
+    .tm-magnit-ny .main-block::after,
+    .tm-magnit .steps-block::before, 
+    .tm-perekrestok .steps-block::before, 
+    .tm-lenta .steps-block::before {
+        background-size: cover;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -5377,6 +5424,61 @@ table td:nth-child(3) {
     .tm-winners-card {
         position: relative;
         bottom: auto;
+    }
+
+    .tm-magnit-ny .main-block {
+        min-height: 550px;
+    }
+
+    .tm-magnit-ny .main-block::before {
+        height: 600px;
+        background: url(../img/bg1-ny-mob.jpg) center no-repeat;
+        background-size: cover;
+    }
+
+    .tm-magnit-ny .main-block::after {
+        bottom: -115px;
+        background: url(../img/main-tinsel.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .tm-magnit-ny .main-heart {
+        max-width: 150px;
+    }
+
+    .tm-magnit-ny .main-slogan-wrapper {
+        padding-top: 0;
+    }
+
+    .tm-magnit-ny .main-slogan,
+    .tm-magnit-ny .main-slogan img {
+        position: relative;
+    }
+
+    .tm-magnit-ny .main-slogan::before {
+        content: '';
+        position: absolute;
+        bottom: -33px;
+        left: -15px;
+        right: -15px;
+        margin: auto;
+        width: 324px;
+        height: 97px;
+        background: url(../img/main-slogan-bg.svg) center no-repeat;
+        background-size: contain;
+        z-index: 0;
+    }
+
+    .steps-block::before {
+        background: url(../img/bg2-mob.png) center no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .tm-magnit-ny .steps-block::after {
+        top: -60px;
+        right: 0;
+        width: 150px;
+        height: 134px;
     }
 }
 
