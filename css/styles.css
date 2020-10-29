@@ -4052,7 +4052,8 @@ table td:nth-child(3) {
     margin-bottom: 20px;
 }
 
-.tm-lenta .winners-page {
+.tm-lenta .winners-page,
+.tm-perekrestok .winners-page {
     position: relative;
     background: url(../img/tm-winners-bg.jpg) center repeat-x;
     background-size: cover;
@@ -4176,6 +4177,10 @@ table td:nth-child(3) {
     background: url(../img/tm-magnit/heart.png) center no-repeat;
     background-size: contain;
     z-index: 1;
+}
+
+.tm-perekrestok .winners-col-title {
+    color: #62B32B;
 }
 
 @media (max-width: 1366px) {
