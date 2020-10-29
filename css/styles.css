@@ -3470,11 +3470,9 @@ table td:nth-child(3) {
     padding: 180px 0 300px;
 }
 
-.tm-perekrestok .steps-block {
-    padding: 180px 0;
-}
-
-.tm-lenta .steps-block {
+.tm-perekrestok .steps-block,
+.tm-lenta .steps-block,
+.tm-5ka .steps-block {
     padding: 180px 0;
 }
 
@@ -3488,7 +3486,8 @@ table td:nth-child(3) {
 
 .tm-magnit .steps,
 .tm-perekrestok .steps,
-.tm-lenta .steps {
+.tm-lenta .steps,
+.tm-5ka .steps {
     position: relative;
     max-width: 980px;
     z-index: 1;
@@ -3496,7 +3495,8 @@ table td:nth-child(3) {
 
 .tm-magnit .step,
 .tm-perekrestok .step,
-.tm-lenta .step {
+.tm-lenta .step,
+.tm-5ka .step {
     position: relative;
     max-width: 406px;
     -ms-align-items: flex-start;
@@ -3505,19 +3505,22 @@ table td:nth-child(3) {
 
 .tm-magnit .step1 .step-img,
 .tm-perekrestok .step1 .step-img,
-.tm-lenta .step1 .step-img {
+.tm-lenta .step1 .step-img,
+.tm-5ka .step1 .step-img {
     max-width: 406px;
 }
 
 .tm-magnit .step2 .step-img,
 .tm-perekrestok .step2 .step-img,
-.tm-lenta .step2 .step-img {
+.tm-lenta .step2 .step-img,
+.tm-5ka .step2 .step-img {
     max-width: 309px;
 }
 
 .tm-magnit .step-num,
 .tm-perekrestok .step-num,
-.tm-lenta .step-num {
+.tm-lenta .step-num,
+.tm-5ka .step-num {
     position: absolute;
     top: 200px;
     left: 0;
@@ -3528,7 +3531,9 @@ table td:nth-child(3) {
 .tm-perekrestok .step-title,
 .tm-perekrestok .step-text,
 .tm-lenta .step-title,
-.tm-lenta .step-text {
+.tm-lenta .step-text,
+.tm-5ka .step-title,
+.tm-5ka .step-text {
     text-align: left;
     padding-left: 94px;
 }
@@ -3864,6 +3869,11 @@ table td:nth-child(3) {
     background-size: 100% 100%;
 }
 
+.tm-5ka .fund-rus-block {
+    background: url(../img/tm-5ka/fund-rus-bg.png) center no-repeat;
+    background-size: 100% 100%;
+}
+
 .fund-rus-block::before {
     content: '';
     position: absolute;
@@ -3874,6 +3884,11 @@ table td:nth-child(3) {
     width: 100%;
     height: 263px;
     background: url(../img/tm-perekrestok/perekrestok-slogan.svg) center no-repeat;
+    background-size: contain;
+}
+
+.tm-5ka .fund-rus-block::before {
+    background: url(../img/tm-5ka/5ka-slogan.svg) center no-repeat;
     background-size: contain;
 }
 
@@ -4136,17 +4151,20 @@ table td:nth-child(3) {
     max-height: 100%;
 }
 
-.tm-magnit-ny .main-block {
+.tm-magnit-ny .main-block,
+.tm-5ka .main-block {
     min-height: 700px;
 }
 
-.tm-magnit-ny .main-block::before {
+.tm-magnit-ny .main-block::before,
+.tm-5ka .main-block::before {
     height: 748px;
     background: url(../img/bg1-ny.jpg) center no-repeat;
     background-size: cover;
 }
 
-.tm-magnit-ny .main-block::after {
+.tm-magnit-ny .main-block::after,
+.tm-5ka .main-block::after {
     background: url(../img/main-tinsel.png) center no-repeat;
     background-size: 100% 100%;
 }
@@ -4161,16 +4179,18 @@ table td:nth-child(3) {
     z-index: 2;
 }
 
-.tm-magnit-ny .main-slogan-wrapper {
+.tm-magnit-ny .main-slogan-wrapper,
+.tm-5ka .main-slogan-wrapper {
     padding-top: 140px;
 }
 
-.tm-magnit-ny .steps-block::after {
+.tm-magnit-ny .steps-block::after,
+.tm-5ka .steps-block::after {
     content: '';
     position: absolute;
     top: -100px;
     left: 0;
-    right: -600px;
+    right: -550px;
     margin: auto;
     width: 309px;
     height: 278px;
@@ -4179,8 +4199,23 @@ table td:nth-child(3) {
     z-index: 1;
 }
 
+.tm-5ka .steps-block::after {
+    background: url(../img/tm-5ka/heart.svg) center no-repeat;
+    background-size: contain;
+}
+
 .tm-perekrestok .winners-col-title {
     color: #62B32B;
+}
+
+.tm-5ka .winners-page {
+    position: relative;
+    background: url(../img/bg-inner-ny.jpg) center repeat-x;
+    background-size: cover;
+}
+
+.tm-5ka .winners-col-title {
+    color: #EB2316;
 }
 
 @media (max-width: 1366px) {
@@ -4192,7 +4227,10 @@ table td:nth-child(3) {
     .tm-magnit-ny .main-block::after,
     .tm-magnit .steps-block::before, 
     .tm-perekrestok .steps-block::before, 
-    .tm-lenta .steps-block::before {
+    .tm-lenta .steps-block::before,
+    .tm-5ka .main-block::after,
+    .tm-5ka .steps-block::before, 
+    .tm-5ka .fund-rus-block {
 		background-size: cover;
 	}
 }
@@ -5211,11 +5249,9 @@ table td:nth-child(3) {
         padding: 100px 0 550px;
     }
 
-    .tm-perekrestok .steps-block {
-        padding: 100px 0;
-    }
-
-    .tm-lenta .steps-block {
+    .tm-perekrestok .steps-block,
+    .tm-lenta .steps-block,
+    .tm-5ka .steps-block {
         padding: 100px 0;
     }
 
@@ -5229,26 +5265,30 @@ table td:nth-child(3) {
 
     .tm-magnit .step,
     .tm-perekrestok .step,
-    .tm-lenta .step {
+    .tm-lenta .step,
+    .tm-5ka .step {
         -ms-align-items: center;
         align-items: center;
     }
 
     .tm-magnit .step1 .step-img,
     .tm-perekrestok .step1 .step-img,
-    .tm-lenta .step1 .step-img {
+    .tm-lenta .step1 .step-img,
+    .tm-5ka .step1 .step-img {
         max-width: 353px;
     }
 
     .tm-magnit .step2 .step-img,
     .tm-perekrestok .step2 .step-img,
-    .tm-lenta .step2 .step-img {
+    .tm-lenta .step2 .step-img,
+    .tm-5ka .step2 .step-img {
         max-width: 179px;
     }
 
     .tm-magnit .step-num,
     .tm-perekrestok .step-num,
-    .tm-lenta .step-num {
+    .tm-lenta .step-num,
+    .tm-5ka .step-num {
         position: relative;
         top: auto;
         left: auto;
@@ -5259,7 +5299,9 @@ table td:nth-child(3) {
     .tm-perekrestok .step-title, 
     .tm-perekrestok .step-text,
     .tm-lenta .step-title, 
-    .tm-lenta .step-text {
+    .tm-lenta .step-text,
+    .tm-5ka .step-title, 
+    .tm-5ka .step-text {
         text-align: center;
         padding-left: 0;
     }
@@ -5321,11 +5363,13 @@ table td:nth-child(3) {
         top: 100px;
     }
 
-    .fund-rus-block {
+    .fund-rus-block,
+    .tm-5ka .fund-rus-block {
         padding-bottom: 60px;
     }
 
-    .fund-rus-block::before {
+    .fund-rus-block::before,
+    .tm-5ka .fund-rus-block::before {
         top: -130px;
         background-size: 418px;
     }
@@ -5431,36 +5475,44 @@ table td:nth-child(3) {
         bottom: auto;
     }
 
-    .tm-magnit-ny .main-block {
+    .tm-magnit-ny .main-block,
+    .tm-5ka .main-block {
         min-height: 550px;
     }
 
-    .tm-magnit-ny .main-block::before {
+    .tm-magnit-ny .main-block::before,
+    .tm-5ka .main-block::before {
         height: 600px;
         background: url(../img/bg1-ny-mob.jpg) center no-repeat;
         background-size: cover;
     }
 
-    .tm-magnit-ny .main-block::after {
+    .tm-magnit-ny .main-block::after,
+    .tm-5ka .main-block::after {
         bottom: -115px;
         background: url(../img/main-tinsel.png) center no-repeat;
         background-size: cover;
     }
 
-    .tm-magnit-ny .main-heart {
+    .tm-magnit-ny .main-heart,
+    .tm-5ka .main-heart {
         max-width: 150px;
     }
 
-    .tm-magnit-ny .main-slogan-wrapper {
+    .tm-magnit-ny .main-slogan-wrapper,
+    .tm-5ka .main-slogan-wrapper {
         padding-top: 0;
     }
 
     .tm-magnit-ny .main-slogan,
-    .tm-magnit-ny .main-slogan img {
+    .tm-magnit-ny .main-slogan img,
+    .tm-5ka .main-slogan,
+    .tm-5ka .main-slogan img {
         position: relative;
     }
 
-    .tm-magnit-ny .main-slogan::before {
+    .tm-magnit-ny .main-slogan::before,
+    .tm-5ka .main-slogan::before {
         content: '';
         position: absolute;
         bottom: -33px;
@@ -5474,16 +5526,28 @@ table td:nth-child(3) {
         z-index: 0;
     }
 
-    .steps-block::before {
+    .tm-5ka .main-slogan::before {
+        bottom: -25px;
+    }
+
+    .tm-magnit-ny .steps-block::before,
+    .tm-5ka .steps-block::before {
         background: url(../img/bg2-mob.png) center no-repeat;
         background-size: 100% 100%;
     }
 
-    .tm-magnit-ny .steps-block::after {
+    .tm-magnit-ny .steps-block::after,
+    .tm-5ka .steps-block::after {
         top: -60px;
         right: 0;
         width: 150px;
         height: 134px;
+    }
+
+    .tm-5ka .winners-page {
+        background-size: cover;
+        background: url(../img/bg-inner-ny-mob.jpg) center 0 no-repeat, #fff;
+        background-size: 100%;
     }
 }
 
@@ -5521,7 +5585,8 @@ table td:nth-child(3) {
         height: 30px;
     }
 
-    .fund-rus-block::before {
+    .fund-rus-block::before,
+    .tm-5ka .fund-rus-block::before {
         background-size: 386px;
     }
 }
