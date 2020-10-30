@@ -269,6 +269,10 @@ body .mobile-visible {
     margin-right: 70px;
 }
 
+.mr150 {
+    margin-right: 150px;
+}
+
 /*SCROLL ---------------------- */
 body .scroll-element,
 body .scroll-element div {
@@ -1205,6 +1209,10 @@ span.error {
 
 .mw210 {
 	max-width: 210px;
+}
+
+.mw130 {
+    max-width: 130px;
 }
 
 .btn {
@@ -3763,20 +3771,24 @@ table td:nth-child(3) {
     width: 281px;
 }
 
-.tm-slider .swiper-button-prev {
+.tm-slider .swiper-button-prev,
+.ny-block .swiper-button-prev {
     left: 0;
     background: url(../img/arrow-left-purple.svg) center no-repeat;
     background-size: contain;
 }
 
-.tm-slider .swiper-button-next {
+.tm-slider .swiper-button-next,
+.ny-block .swiper-button-next {
     right: 0;
     background: url(../img/arrow-right-purple.svg) center no-repeat;
     background-size: contain;
 }
 
 .tm-slider .swiper-button-next::after, 
-.tm-slider .swiper-button-prev::after {
+.tm-slider .swiper-button-prev::after,
+.ny-block .swiper-button-next::after, 
+.ny-block .swiper-button-prev::after {
     display: none;
 }
 
@@ -4164,7 +4176,8 @@ table td:nth-child(3) {
 }
 
 .tm-magnit-ny .main-block::after,
-.tm-5ka .main-block::after {
+.tm-5ka .main-block::after,
+.main-block-ny::after {
     background: url(../img/main-tinsel.png) center no-repeat;
     background-size: 100% 100%;
 }
@@ -4218,6 +4231,75 @@ table td:nth-child(3) {
     color: #EB2316;
 }
 
+.main-block-ny {
+    min-height: 500px;
+}
+
+.main-block-ny::before {
+    background: url(../img/bg-main-ny.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.main-block-ny .main-col-wrapper {
+    max-width: 842px;
+}
+
+.main-block-ny .main-slogan {
+    margin-left: 30px;
+}
+
+.ny-block {
+    position: absolute;
+    top: 400px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1050px;
+    width: 100%;
+    margin: auto;
+    z-index: 2;
+}
+
+.ny-img {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 225px;
+    width: 100%;
+    min-height: 235px;
+    margin: 0 auto 10px;
+}
+
+.ny2 .ny-img {
+    max-width: 272px;
+}
+
+.snowflake {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.snowflake1 {
+    top: 50px;
+    left: auto;
+    right: -200px;
+}
+
+.snowflake2 {
+    top: 400px;
+    left: -100px;
+}
+
+.snowflake3 {
+    top: 240px;
+    left: -150px;
+    right: auto;
+}
+
 @media (max-width: 1366px) {
 	.steps-block::before,
 	.hashtag-block::before,
@@ -4230,7 +4312,8 @@ table td:nth-child(3) {
     .tm-lenta .steps-block::before,
     .tm-5ka .main-block::after,
     .tm-5ka .steps-block::before, 
-    .tm-5ka .fund-rus-block {
+    .tm-5ka .fund-rus-block,
+    .main-block-ny::after {
 		background-size: cover;
 	}
 }
@@ -5363,6 +5446,11 @@ table td:nth-child(3) {
         top: 100px;
     }
 
+    .ny-block .swiper-button-prev,
+    .ny-block .swiper-button-next {
+        top: 130px;
+    }
+
     .fund-rus-block,
     .tm-5ka .fund-rus-block {
         padding-bottom: 60px;
@@ -5477,7 +5565,7 @@ table td:nth-child(3) {
 
     .tm-magnit-ny .main-block,
     .tm-5ka .main-block {
-        min-height: 550px;
+        min-height: 490px;
     }
 
     .tm-magnit-ny .main-block::before,
@@ -5488,7 +5576,8 @@ table td:nth-child(3) {
     }
 
     .tm-magnit-ny .main-block::after,
-    .tm-5ka .main-block::after {
+    .tm-5ka .main-block::after,
+    .main-block-ny::after {
         bottom: -115px;
         background: url(../img/main-tinsel.png) center no-repeat;
         background-size: cover;
@@ -5548,6 +5637,28 @@ table td:nth-child(3) {
         background-size: cover;
         background: url(../img/bg-inner-ny-mob.jpg) center 0 no-repeat, #fff;
         background-size: 100%;
+    }
+
+    .main-block-ny {
+        min-height: 770px;
+    }
+
+    .ny-block {
+        top: 470px;
+    }
+
+    .snowflake1 {
+        top: 50px;
+        right: -30px;
+    }
+
+    .snowflake2 {
+        top: auto;
+        bottom: -80px;
+    }
+
+    .snowflake3 {
+        left: -50px;
     }
 }
 

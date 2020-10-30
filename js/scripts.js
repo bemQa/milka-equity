@@ -428,6 +428,20 @@ $(document).ready(function () {
 
     }
 
+    if ($('.ny-block').length && window.innerWidth < 1000) {
+        var wrap = $('.ny-block');
+
+        var swiper = new Swiper(wrap, {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+        });
+        swiper.init();
+
+    }
+
     // choise shop
     $('#shops').on('select2:select', function(){
         $('.shops-btn').removeClass('disabled');
