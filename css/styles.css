@@ -261,6 +261,10 @@ body .mobile-visible {
 	margin-bottom: 30px;
 }
 
+.mb70 {
+    margin-bottom: 70px;
+}
+
 .mr50 {
     margin-right: 50px;
 }
@@ -1209,6 +1213,14 @@ span.error {
 
 .mw210 {
 	max-width: 210px;
+}
+
+.mw190 {
+    max-width: 190px;
+}
+
+.mw140 {
+    max-width: 140px;
 }
 
 .mw130 {
@@ -4300,6 +4312,329 @@ table td:nth-child(3) {
     right: auto;
 }
 
+.products-ny-block1 {
+    position: relative;
+    padding: 180px 0 70px;
+}
+
+.products-ny-block1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 900px;
+    background: url(../img/bg3.png) center no-repeat;
+    background-size: 100% 100%;
+    z-index: 0;
+}
+
+.products-ny-block1::after {
+    content: '';
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: -150px;
+    bottom: 0;
+    margin: auto;
+    width: 1286px;
+    height: 523px;
+    background: url(../img/products-ny-decor1.png) center no-repeat;
+    background-size: 1286px 523px;
+}
+
+.products-ny-wrapper {
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    max-width: 926px;
+    width: 100%;
+    margin: auto;
+}
+
+.products-ny-info {
+    max-width: 425px;
+}
+
+.products-ny-title {
+    font-family: 'AppetitePro';
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 32px;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.products-ny-title.purple,
+.products-ny-text.purple {
+    color: #695698;
+}
+
+.products-ny-text {
+    min-height: 64px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.products-ny-info .btn-wrapper {
+    margin: 0 auto;
+}
+
+.products-ny-info .btn {
+    font-size: 15px;
+}
+
+.invert-btn {
+    background: transparent;
+    box-shadow: none;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.invert-btn-purple {
+    background: transparent;
+    box-shadow: none;
+    color: #695698;
+    border: 2px solid #695698;
+}
+
+.invert-btn:hover {
+    background: #fff;
+    color: #695698;
+}
+
+.invert-btn-purple:hover {
+    color: #fff;
+    background: #695698;
+}
+
+.products-ny-block2 {
+    position: relative;
+}
+
+.products-ny-block2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 500px;
+    background: url(../img/bg5.png) center no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.products-ny-block2 .container,
+.products-ny-block3 .container {
+    z-index: 1;
+}
+
+.products-ny-block3 {
+    position: relative;
+    padding: 130px 0 70px;
+}
+
+.products-ny-block3::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 900px;
+    background: url(../img/bg3.png) center no-repeat;
+    background-size: 100% 100%;
+    z-index: 0;
+}
+
+.products-ny-block3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 739px;
+    background: url(../img/products-ny-decor2.png) center no-repeat;
+    background-size: 1452px 739px;
+}
+
+.where-buy-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.where-buy-title {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-ny-page {
+    position: relative;
+    background: url(../img/bg1.jpg) center repeat-x;
+    background-size: cover;
+}
+
+.product-ny-page::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: url(../img/product-ny-decor.png) center 0 no-repeat;
+    background-size: 1541px 1393px;
+    z-index: 0;
+}
+
+.product-ny-page .container {
+    z-index: 1;
+}
+
+.back-link {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 120px;
+    height: 54px;
+    padding-left: 64px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 54px;
+    color: #fff;
+    z-index: 1;
+}
+
+.back-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 54px;
+    height: 54px;
+    background: url(../img/back-icon.svg) center no-repeat;
+    background-size: cover;
+}
+
+.product-ny-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-ny-subtitle {
+    font-size: 27px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.product-ny-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+.product-ny {
+    max-width: 320px;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.product-ny-img {
+    position: relative;
+    width: 100%;
+    height: 235px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-ny3 .product-ny-img {
+    height: 200px;
+}
+
+.product-ny-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 300px;
+    height: 274px;
+    background: url(../img/product-ny-hover.png) center no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: all .2s linear;
+    z-index: 0;
+}
+
+.product-ny:hover .product-ny-img::before {
+    opacity: 1;
+}
+
+.product-ny-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.product-ny-name {
+    position: relative;
+    font-family: 'AppetitePro';
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 12px;
+    white-space: nowrap;
+}
+
+.product-ny-text {
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.more-products {
+    margin-bottom: 70px;
+}
+
+.more-products .btn {
+    font-size: 17px;
+}
+
 @media (max-width: 1366px) {
 	.steps-block::before,
 	.hashtag-block::before,
@@ -4313,7 +4648,10 @@ table td:nth-child(3) {
     .tm-5ka .main-block::after,
     .tm-5ka .steps-block::before, 
     .tm-5ka .fund-rus-block,
-    .main-block-ny::after {
+    .main-block-ny::after,
+    .products-ny-block1::before,
+    .products-ny-block2::before,
+    .products-ny-block3::before {
 		background-size: cover;
 	}
 }
@@ -5645,6 +5983,7 @@ table td:nth-child(3) {
 
     .ny-block {
         top: 470px;
+        padding-bottom: 10px;
     }
 
     .snowflake1 {
@@ -5659,6 +5998,146 @@ table td:nth-child(3) {
 
     .snowflake3 {
         left: -50px;
+    }
+
+    .products-ny-block {
+        min-height: 300px;
+        padding-bottom: 0;
+    }
+
+    .products-ny-block::before {
+        background: url(../img/products-ny-bg-mob.jpg) center no-repeat;
+        background-size: cover;
+    }
+
+    .products-ny-block::after {
+        bottom: -185px;
+        height: 236px;
+        background: url(../img/tinsel-products.png) center no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .products-slogan {
+        padding-top: 350px;
+    }
+
+    .products-ny-block1::before {
+        background: url(../img/bg3-mob.png) center no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .products-ny-block1::after {
+        right: 0;
+        bottom: auto;
+        width: 100%;
+        height: 434px;
+        background: url(../img/products-ny-decor1-mob.png) center no-repeat;
+        background-size: 432px 404px;
+    }
+
+    .products-ny-block1 {
+        padding-top: 130px;
+    }
+
+    .products-ny-wrapper {
+        flex-direction: column;
+    }
+
+    .products-ny-info .btn-wrapper-double {
+        flex-direction: row;
+    }
+    
+    .products-ny-block2::before {
+        height: 580px;
+    }
+
+    .products-ny2-img {
+        order: -1;
+    }
+
+    .products-ny-title {
+        font-size: 30px;
+    }
+
+    .products-ny-text {
+        margin-bottom: 10px;
+    }
+
+    .products-ny-block3 {
+        padding-top: 100px;
+    }
+
+    .products-ny-block3::before {
+        min-height: 1020px;
+    }
+
+    .products-ny-block3::after {
+        top: -130px;
+        right: 0;
+        width: 100%;
+        height: 645px;
+        background: url(../img/products-ny-decor2-mob.png) center no-repeat;
+        background-size: 425px 645px;
+    }
+
+    .products-ny-block3 .products-ny-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .where-buy-link {
+        display: block;
+        max-width: 200px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .mini-slider .swiper-button-prev.white {
+        left: 0;
+        background: url(../img/arrow-left.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .mini-slider .swiper-button-next.white {
+        right: 0;
+        background: url(../img/arrow-right.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .product-ny-wrapper.mini-slider .swiper-button-prev.white,
+    .product-ny-wrapper.mini-slider .swiper-button-next.white {
+        top: 130px;
+    }
+
+    .product-ny3.mini-slider .swiper-button-prev.white,
+    .product-ny3.mini-slider .swiper-button-next.white {
+        top: 100px;
+    }
+
+    .mini-slider .swiper-button-next::after, 
+    .mini-slider .swiper-button-prev::after {
+        display: none;
+    }
+
+    .product-ny-page {
+        padding-top: 80px;
+    }
+
+    .back-link {
+        top: -40px;
+        left: 10px;
+        height: 39px;
+        padding-left: 50px;
+        line-height: 39px;
+    }
+
+    .back-link::before {
+        width: 39px;
+        height: 39px;
+    }
+
+    .product-ny-page::after {
+        background: url(../img/product-ny-decor-mob.png) center 0 no-repeat;
+        background-size: 428px 677px;
     }
 }
 

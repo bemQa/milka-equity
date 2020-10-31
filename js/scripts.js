@@ -428,8 +428,8 @@ $(document).ready(function () {
 
     }
 
-    if ($('.ny-block').length && window.innerWidth < 1000) {
-        var wrap = $('.ny-block');
+    if ($('.mini-slider').length && window.innerWidth < 1000) {
+        var wrap = $('.mini-slider');
 
         var swiper = new Swiper(wrap, {
             loop: true,
