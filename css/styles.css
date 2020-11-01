@@ -5916,7 +5916,7 @@ table td:nth-child(3) {
     .tm-magnit-ny .main-block::after,
     .tm-5ka .main-block::after,
     .main-block-ny::after {
-        bottom: -115px;
+        bottom: -100px;
         background: url(../img/main-tinsel.png) center no-repeat;
         background-size: cover;
     }
