@@ -4189,10 +4189,15 @@ table td:nth-child(3) {
     min-height: 700px;
 }
 
-.tm-magnit-ny .main-block::before,
-.tm-5ka .main-block::before {
+.tm-magnit-ny .main-block::before {
     height: 748px;
     background: url(../img/bg1-ny.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.tm-5ka .main-block::before {
+    height: 748px;
+    background: url(../img/bg1-ny-5ka.jpg) center no-repeat;
     background-size: cover;
 }
 
