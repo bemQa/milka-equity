@@ -4460,7 +4460,7 @@ table td:nth-child(3) {
     left: 0;
     right: 0;
     width: 100%;
-    min-height: 900px;
+    min-height: 960px;
     background: url(../img/bg3.webp) center no-repeat;
     background-size: 100% 100%;
     z-index: 0;
@@ -4482,6 +4482,7 @@ table td:nth-child(3) {
 
 .where-buy-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1020px;
     width: 100%;
