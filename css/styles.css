@@ -4650,6 +4650,24 @@ table td:nth-child(3) {
     font-size: 17px;
 }
 
+.new-action-popup .popup__wrap {
+    height: 468px;
+    background: url(../img/new-action-popup.png) center no-repeat;
+    background-size: contain;
+}
+
+.new-action-popup .btn-wrapper {
+    position: absolute;
+    top: 380px;
+    left: 0;
+    right: 0;
+}
+
+.new-action-popup .close-popup {
+    top: -25px;
+    right: -25px;
+}
+
 @media (max-width: 1366px) {
 	.steps-block::before,
 	.hashtag-block::before,
@@ -6135,24 +6153,29 @@ table td:nth-child(3) {
         background: url(../img/product-ny-decor-mob.png) center 0 no-repeat;
         background-size: 428px 677px;
     }
+
+    .new-action-popup .close-popup {
+        top: 15px;
+        right: 15px;
+    }
 }
 
 @media (max-width: 375px) {
-	.prizes-block::before {
-		background-size: cover;
-	}
+    .prizes-block::before {
+        background-size: cover;
+    }
 }
 
 @media (max-width: 360px) {
-	.hashtag-slogan,
-	.hashtag-info {
-		max-width: 300px;
-	}
+    .hashtag-slogan,
+    .hashtag-info {
+        max-width: 300px;
+    }
 
-	.hashtag-text {
-	    font-size: 20px;
-    	line-height: 26px;
-	}
+    .hashtag-text {
+        font-size: 20px;
+        line-height: 26px;
+    }
 
     .tab {
         width: 92px;
@@ -6174,5 +6197,10 @@ table td:nth-child(3) {
     .fund-rus-block::before,
     .tm-5ka .fund-rus-block::before {
         background-size: 386px;
+    }
+
+    .new-action-popup .close-popup {
+        top: 25px;
+        right: 25px;
     }
 }
