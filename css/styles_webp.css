@@ -4668,6 +4668,21 @@ table td:nth-child(3) {
     right: -25px;
 }
 
+.prize-replace-img,
+.prize-replace-popup .popup__desc {
+    margin-bottom: 20px;
+}
+
+.prize-replace-popup .checkbox-field {
+    max-width: 140px;
+    margin-bottom: 20px;
+}
+
+.prize-replace-popup .checkbox-text {
+    font-weight: 500;
+    font-size: 16px;
+}
+
 @media (max-width: 1366px) {
 	.steps-block::before,
     .hashtag-block::before,
